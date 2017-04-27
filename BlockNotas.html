@@ -1,0 +1,65 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Revalia|Roboto" rel="stylesheet">
+    </head>
+    <body>
+        
+       
+        
+        <div class="textonota">
+            
+            
+        <textarea placeholder="Escribe aquí tu nota" class="ptextonota" id="contenido"></textarea>
+        <button class="btn2" onclick="guardarNota()">Agregar</button>
+        <button class="btn1" onclick="navegar('PantallaCal.html')">Regresar</button>
+        
+        
+        
+        </div>
+    
+    
+    
+    
+    </body>
+    
+    <script>
+    function navegar(liga){
+        //Rederigir a liga (juego.html)
+        window.location.assign(liga);
+    }
+        
+    function guardarNota(){
+            contenido = document.getElementById('contenido').value;
+            //verificar si ya hay notas guardadas.
+            if(localStorage.getItem('contador')){
+                //si ya hay, agregamos otra
+                //hacemos una sola estructura de nota
+                notaCompleta =contenido;
+                //obtenemos el numero de nota que es
+                contador = localStorage.getItem('contador');
+                //incrementamos el contador
+                contador++;
+                //guardamos la nueva nota, con la nueva posición del contador
+                localStorage.setItem('nota' + contador, notaCompleta);
+                //guardar contador incrementado
+                localStorage.setItem('contador',contador);
+            }
+            else{
+                //si no hay nada guardado, creamos contador
+                localStorage.setItem("contador", "0");
+                notaCompleta = contenido;
+                contador = localStorage.getItem('contador');
+                localStorage.setItem('nota' + contador, notaCompleta);
+                
+            }
+    }
+    </script>
+    
+
+
+
+
+</html>

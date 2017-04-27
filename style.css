@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: black;
+}
+.texto{
+    width: 100%;
+    height: 133px;
+    color: white;
+    
+    
+}
+
+.textoPantalla{
+    width: 100%;
+    height: 133px;
+    font-size: 4em;
+    text-align: right;
+    color: white;
+    
+    
+}
+.primerFila{
+    background-color: gray;
+    color: white;
+    width: 25%;
+}
+.operacion{
+    background-color:forestgreen;
+    color: white;
+    width: 25%;
+}
+#mas{
+    height: 170px;
+    position: absolute;
+}
+.igual{
+    background-color:orange;
+    color: white;
+    width: 50.5%;
+}
+.c{
+    background-color:red;
+    color: white;
+    width: 25%;
+}
+.botones button{
+    height: 85px;
+    margin-right: -4;
+    border: 1px;
+    font-size: 1.7em;
+    outline: none;
+}
+.numero{
+    background-color: lightgray; 
+    width: 25%;
+}
+.titulonota{
+    width: 50%;
+    
+}
+
+.textonota{
+    
+    color: white;
+    padding: 15px;
+    
+    
+}
+.ptextonota{
+    width: 100%;
+    height: 80%;
+    color: white;
+    font: 2.4em;
+    background-color: darkgray;
+    font-size: 1.7em;
+}
+
+.btn1{
+    border: none;
+    background-color: forestgreen;
+    color:black;
+    align-content: space-around;
+    width: 100%;
+    height: 8%;
+    font-size: 1.7em;
+    
+}
+.btn2{
+    border: none;
+    background-color: forestgreen;
+    color:black;
+    align-content: space-around;
+    width: 100%;
+    height: 8%;
+    font-size: 1.7em;
+}
